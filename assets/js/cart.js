@@ -140,4 +140,26 @@ function removeItem(index) {
   renderCart();
 }
 
+function resetCartForm() {
+  // Reset all form input fields visually
+  const cartForm = document.getElementById("cart-form");
+  cartForm.reset();
+
+  // Reset inside localStorage
+  const cart = JSON.parse(localStorage.getItem("cart")) || [];
+  cart.forEach((item) => {
+    item.quantity = 1;
+    item.size = "Small";
+    item.sweetness = 50;
+    item.addons = {
+      caramel: false,
+      vanilla: false,
+      whipped: false,
+    };
+  });
+  localStorage.setItem("cart", JSON.stringify(cart));
+
+  alert("Form and cart fields have been reset!");
+}
+
 renderCart();
