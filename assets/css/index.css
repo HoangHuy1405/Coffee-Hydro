@@ -1,0 +1,81 @@
+/* === Hero Section === */
+.hero {
+  position: relative;
+  height: 80vh; /* full screen height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #222;
+  background: url("../images/beans.jpg") center/cover no-repeat;
+  overflow: hidden;
+}
+
+/* white blurred overlay */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.5); /* semi-transparent white */
+  z-index: 1;
+  height: 100%;
+}
+.hero-content {
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  color: var(--foreground);
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.buttons .view-menu {
+  margin-right: 10px;
+}
+
+/* === space section === */
+.space {
+  background: var(--muted);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.space h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.space-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  gap: 1rem;
+}
+
+.space-container img {
+  width: 100%;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+.space-container figcaption {
+  font-style: italic;
+  color: var(--muted-foreground);
+  margin-top: 0.5rem;
+}

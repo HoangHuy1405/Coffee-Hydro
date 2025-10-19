@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/theme.css" />
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+
+    <link rel="stylesheet" href="assets/css/booking.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <title>Café Hydro</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html" class="logo-link">
+            <div class="logo-icon">
+              <i data-lucide="coffee"></i>
+            </div>
+            <div class="logo-text">
+              <span class="brand-name">Café Hydro</span>
+            </div>
+          </a>
+        </div>
+
+        <!-- Nav -->
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="booking.html">Booking</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="cart.html" class="cart-icon">
+            <i data-lucide="shopping-cart"></i>
+          </a>
+          <a href="order.html" class="btn primary">Order Now</a>
+          <button
+            class="mobile-toggle"
+            id="menu-toggle"
+            aria-label="Toggle menu"
+          >
+            <i data-lucide="menu"></i>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div class="mobile-menu" id="mobile-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="booking.html">Booking</a></li>
+        </ul>
+      </div>
+    </header>
+    <main class="booking-container">
+      <header class="booking-header">
+        <h1>Reserve a Table</h1>
+        <p>Book your spot for a cozy coffee experience</p>
+      </header>
+
+      <section class="booking-info">
+        <div class="info-item">
+          <i data-lucide="calendar"></i>
+          <p>Book up to 30 days in advance</p>
+        </div>
+        <div class="info-item">
+          <i data-lucide="clock"></i>
+          <p>2-hour seating duration</p>
+        </div>
+        <div class="info-item">
+          <i data-lucide="users"></i>
+          <p>Groups up to 8 people</p>
+        </div>
+      </section>
+
+      <section class="booking-form-section">
+        <form id="booking-form" class="booking-form">
+          <h2>Reservation Details</h2>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first-name">First Name *</label>
+              <input
+                type="text"
+                id="first-name"
+                name="first-name"
+                placeholder="Hoang"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="last-name">Last Name *</label>
+              <input
+                type="text"
+                id="last-name"
+                name="last-name"
+                placeholder="Huy"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="hoanghuy@gmail.com"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="(85) 123456789"
+              required
+            />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="date">Date *</label>
+              <input type="date" id="date" name="date" required />
+            </div>
+
+            <div class="form-group">
+              <label for="time">Time *</label>
+              <input type="time" id="time" name="time" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="guests">Number of Guests *</label>
+            <select id="guests" name="guests" required>
+              <option value="">Select number of guests</option>
+              <option>1 Guest</option>
+              <option>2 Guests</option>
+              <option>3 Guests</option>
+              <option>4 Guests</option>
+              <option>5 Guests</option>
+              <option>6 Guests</option>
+              <option>7 Guests</option>
+              <option>8 Guests</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="seating">Seating Preference</label>
+            <select id="seating" name="seating">
+              <option value="">Select seating preference</option>
+              <option>No Preference</option>
+              <option>Window Seat</option>
+              <option>Outdoor Patio</option>
+              <option>Quiet Corner</option>
+              <option>Counter Seating</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="occasion">Special Occasion</label>
+            <select id="occasion" name="occasion">
+              <option value="">Select if celebrating</option>
+              <option>None</option>
+              <option>Birthday</option>
+              <option>Anniversary</option>
+              <option>Business Meeting</option>
+              <option>Other Celebration</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="notes">Special Requests or Notes</label>
+            <textarea
+              id="notes"
+              name="notes"
+              rows="4"
+              placeholder="Let us know about any dietary restrictions, accessibility needs, or special requests"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit">Confirm Reservation</button>
+
+          <p class="note">We'll call you back to confirm</p>
+        </form>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <i data-lucide="coffee"></i>
+              <span>Café Hydro</span>
+            </div>
+            <p>
+              Your cozy neighborhood coffee shop serving the finest artisan
+              coffee and pastries.
+            </p>
+          </div>
+
+          <div class="footer-contact">
+            <h3>Contact</h3>
+            <ul>
+              <li>
+                <i data-lucide="map-pin"></i>
+                <span>123 Coffee Lane<br />Seattle, WA 98101</span>
+              </li>
+              <li>
+                <i data-lucide="phone"></i>
+                <a href="tel:+12065551234">(206) 555-1234</a>
+              </li>
+              <li>
+                <i data-lucide="mail"></i>
+                <a href="mailto:hello@cafesienna.com">hello@cafesienna.com</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-hours">
+            <h3>Opening Hours</h3>
+            <ul>
+              <li>Monday - Friday: 7am - 8pm</li>
+              <li>Saturday - Sunday: 8am - 9pm</li>
+            </ul>
+          </div>
+
+          <div class="footer-social">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+              <a
+                href="https://instagram.com"
+                aria-label="Instagram"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i data-lucide="instagram"></i>
+              </a>
+              <a
+                href="https://facebook.com"
+                aria-label="Facebook"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i data-lucide="facebook"></i>
+              </a>
+              <a
+                href="https://twitter.com"
+                aria-label="Twitter"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i data-lucide="twitter"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom"></div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="./assets/js/mobile.js"></script>
+    <script src="./assets/js/navigation.js"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>

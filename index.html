@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/theme.css" />
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+    <title>Café Hydro</title>
+  </head>
+
+  <body>
+    <header class="site-header">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html" class="logo-link">
+            <div class="logo-icon">
+              <i data-lucide="coffee"></i>
+            </div>
+            <div class="logo-text">
+              <span class="brand-name">Café Hydro</span>
+            </div>
+          </a>
+        </div>
+
+        <!-- Nav -->
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="booking.html">Booking</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="cart.html" class="cart-icon">
+            <i data-lucide="shopping-cart"></i>
+          </a>
+          <a href="order.html" class="btn primary">Order Now</a>
+          <button
+            class="mobile-toggle"
+            id="menu-toggle"
+            aria-label="Toggle menu"
+          >
+            <i data-lucide="menu"></i>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div class="mobile-menu" id="mobile-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="booking.html">Booking</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Welcome to Café Hydro</h1>
+          <p>
+            Experience the perfect blend of artisan coffee, warm ambiance, and
+            genuine hospitality.
+          </p>
+          <div class="buttons">
+            <a href="menu.html" class="btn primary view-menu">View Menu</a>
+            <a href="order.html" class="btn outline">Order Now</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="space">
+        <h2>Experience Our Space</h2>
+        <figure class="space-container">
+          <img
+            src="./assets/images/space.jpg"
+            alt="Cozy coffee shop interior with comfortable seating"
+          />
+          <figcaption>
+            Cozy coffee shop interior with comfortable seating
+          </figcaption>
+        </figure>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <i data-lucide="coffee"></i>
+              <span>Café Hydro</span>
+            </div>
+            <p>
+              Your cozy neighborhood coffee shop serving the finest coffee and
+              pastries.
+            </p>
+          </div>
+
+          <div class="footer-contact">
+            <h3>Contact</h3>
+            <ul>
+              <li>
+                <i data-lucide="map-pin"></i>
+                <span>123 Vo Van Ngan<br />Thu duc, Tp HCM</span>
+              </li>
+              <li>
+                <i data-lucide="phone"></i>
+                <a href="tel:+12065551234">(84) 123456789</a>
+              </li>
+              <li>
+                <i data-lucide="mail"></i>
+                <a href="mailto:nguyenmaihoanghuy@gmail.com"
+                  >nguyenmaihoanghuy@gmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-hours">
+            <h3>Opening Hours</h3>
+            <ul>
+              <li>Monday - Friday: 7am - 8pm</li>
+              <li>Saturday - Sunday: 8am - 9pm</li>
+            </ul>
+          </div>
+
+          <div class="footer-social">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+              <a
+                href="https://instagram.com"
+                aria-label="Instagram"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i data-lucide="instagram"></i>
+              </a>
+              <a
+                href="https://facebook.com"
+                aria-label="Facebook"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i data-lucide="facebook"></i>
+              </a>
+              <a
+                href="https://twitter.com"
+                aria-label="Twitter"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i data-lucide="twitter"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom"></div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="./assets/js/mobile.js"></script>
+    <script src="./assets/js/navigation.js"></script>
+
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>

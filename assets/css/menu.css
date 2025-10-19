@@ -1,0 +1,130 @@
+.menu-container {
+  width: min(1100px, 90%);
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.menu-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.menu-header h1 {
+  font-size: 2.5rem;
+  color: #3c2e25;
+  margin-bottom: 0.5rem;
+}
+
+.menu-header p {
+  font-size: 1.2rem;
+  color: #5b4a3d;
+}
+
+.menu-section {
+  margin-bottom: 3rem;
+}
+
+.menu-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #3c2e25;
+  border-bottom: 2px solid #d8c3a5;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.menu-card {
+  background-color: #fff;
+  border: 1px solid #e6ddd3;
+  border-radius: 12px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ----- Image Section ----- */
+.menu-image {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.menu-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.menu-card:hover .menu-image img {
+  transform: scale(1.1);
+}
+
+/* ----- Badge ----- */
+.menu-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #c48a64;
+  color: white;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.75rem;
+  border-radius: 10px;
+}
+
+/* ----- Card Info ----- */
+.menu-info {
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+.menu-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.5rem;
+}
+
+.menu-title h3 {
+  font-size: 1.2rem;
+  color: #2a2118;
+}
+
+.menu-price {
+  color: #a96e4f;
+  font-weight: 600;
+}
+
+.menu-desc {
+  color: #5c5045;
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+}
+
+/* ----- Button ----- */
+.menu-btn {
+  width: 100%;
+  background: linear-gradient(90deg, #a96e4f, #c48a64);
+  color: white;
+  border: none;
+  padding: 0.6rem;
+  font-size: 1rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: filter 0.2s ease;
+}
+
+.menu-btn:hover {
+  filter: brightness(0.95);
+}

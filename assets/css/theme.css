@@ -1,0 +1,52 @@
+:root {
+  --font-size: 16px;
+  --background: #fff8f0;
+  --foreground: #3e2723;
+  --primary: #8b4513;
+  --primary-foreground: #fff;
+  --secondary: #d4a574;
+  --accent: #e67e22;
+  --muted: #f5e6d3;
+  --muted-foreground: #6d4c41;
+  --border: rgba(139, 69, 19, 0.15);
+  --radius: 0.75rem;
+}
+
+body {
+  font-size: var(--font-size);
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Poppins", sans-serif;
+  transition: background 0.3s, color 0.3s;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--accent);
+}
+
+button {
+  background: var(--primary);
+  color: var(--primary-foreground);
+  border: none;
+  border-radius: var(--radius);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+button:hover {
+  background: var(--accent);
+}
+h1,
+h2,
+h3 {
+  color: var(--foreground);
+}
+a {
+  text-decoration: none;
+}
