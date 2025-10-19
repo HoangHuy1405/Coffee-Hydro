@@ -1,6 +1,6 @@
 .cart-page {
   min-height: 100vh;
-  background-color: #fafafa;
+  background-color: var(--background);
   padding: 3rem 1rem;
   font-family: system-ui, sans-serif;
   font-size: 1.1rem;
